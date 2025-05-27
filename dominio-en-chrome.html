@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brilli Jelly | Mermeladas Veganas y Brillantes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #ff66b2;
+      --secondary: #ffe6f0;
+      --accent: #6a1b9a;
+      --dark: #2c2c2c;
+      --light: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: var(--light);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--secondary);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background-color: var(--secondary);
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+    }
+
+    .hero-content {
+      max-width: 600px;
+      padding: 2rem;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: var(--light);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .about, .testimonials, .contact {
+      text-align: center;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .social-icons i {
+      margin: 0 0.5rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brilli Jelly</h1>
+    <p>Mermeladas Veganas con Brillo, Sabor y Conciencia</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <img src="https://via.placeholder.com/500x350.png?text=Brilli+Jelly" alt="Brilli Jelly Frasco">
+    <div class="hero-content">
+      <h2>Hechas con Amor, Naturaleza y Mucho Brillo</h2>
+      <p>Explora nuestras deliciosas mermeladas artesanales: sin conservadores, sin azúcar refinada, y completamente veganas.</p>
+      <a href="#productos" class="btn">Ver Catálogo</a>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2 style="text-align:center; color:var(--primary);">Nuestros Productos</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Cereza+Brillante" alt="Cereza Brillante">
+        <h3>Cereza Brillante</h3>
+        <p>Mermelada vegana con cerezas frescas y brillitos comestibles. Endulzada con agave.</p>
+        <a class="btn" href="#">Añadir al carrito</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Manzana+Mística" alt="Manzana Mística">
+        <h3>Manzana Mística</h3>
+        <p>Con sabor a manzana dorada, textura cremosa y brillo dorado. Sin azúcar refinada.</p>
+        <a class="btn" href="#">Añadir al carrito</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200?text=Mix+Frutal" alt="Mix Frutal">
+        <h3>Mix Frutal</h3>
+        <p>Fusión de moras, arándanos y limón con brillo morado natural. Dulce y saludable.</p>
+        <a class="btn" href="#">Añadir al carrito</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about">
+    <h2 style="color:var(--primary);">Nuestra Historia</h2>
+    <p style="max-width: 800px; margin:auto;">Brilli Jelly nació del deseo de crear un producto diferente. No solo saludable y vegano, sino también visualmente encantador. Nuestra mermelada es elaborada artesanalmente con frutas orgánicas, sin conservadores ni azúcares procesados. Nos inspira la belleza de lo natural y la alegría de comer bien.</p>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2 style="color:var(--primary);">Contáctanos</h2>
+    <p>📩 contacto@brillijelly.mx | 📱 Instagram: @brillijelly</p>
+    <form style="margin-top: 2rem; max-width: 600px; margin-inline: auto;">
+      <input type="text" placeholder="Tu nombre" style="width:100%; padding:1rem; margin-bottom:1rem;">
+      <input type="email" placeholder="Tu correo" style="width:100%; padding:1rem; margin-bottom:1rem;">
+      <textarea placeholder="Tu mensaje" style="width:100%; padding:1rem; height:150px;"></textarea>
+      <button class="btn" type="submit" style="margin-top:1rem;">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brilli Jelly. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
